@@ -15,19 +15,28 @@
             margin: 0 auto;
             display: grid;
             /* grid-template-columns: 40% 20% 40%; */
-            /* grid-template-columns: 1fr 2fr 1fr; */
-            grid-template-columns: repeat(9, 1fr);
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(10, minmax(200px, auto));
+            /* grid-column-gap: 10px ;
+            grid-row-gap: 10px; */
+            grid-gap: 10px;
+            /* grid-auto-rows: minmax(200px, auto); */
+            /* Khắc phục (1) */
             /* Xác định bao nhiêu cột với chiều rộng tự động */
         }
         #content div{
             background: #3ebcde;
             padding: 30px;
+            /* margin: 20px; */
         }
         #content div:nth-child(even){
             background: #777;
             padding: 30px;
         }
-
+    /* 
+    Chiều cao bị chi phối bởi nd bên trong (1)
+     */
     </style>
 </head>
 <body>
@@ -37,7 +46,9 @@
         <div>3</div>
         <div>4</div>
         <div>5</div>
-        <div>6</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio porro laudantium odio quod saepe? Nostrum in, ex necessitatibus facilis dolor sunt, officiis, possimus nulla labore dicta ut velit eveniet!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quaerat explicabo est accusamus, iure consequatur debitis quod reprehenderit doloribus accusantium dolore ipsam ut odit. Possimus perferendis aspernatur dolore fugit quam.
+        </div>
         <div>7</div>
         <div>8</div>
         <div>9</div>
